@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="linocut.MainPage"
+             xmlns: local = "clr-namespace:linocut">
+    <ContentPage.Content>
+        <VerticalStackLayout
+            Spacing="0.5"
+            Padding="20,0"
+            Margin="0,25">
+            <local: Borderlessentry placeholder= "Enter name"/>
+
+            <Frame BorderColor="LightGray" Padding="(onplatform android='')">
+                <local: borderlessentry placeholder: "Enter name"/> 
+            </Frame>
+
+            <Grid Margin="0,20,0,0" ColumnSpacing="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition>
+
+
+                    </ColumnDefinition>
+
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0" Text="Already have an account?" FontSize="14"/>    
+                <Image Grid.Column="1" Source="mainpage.jpeg" HeightRequest="200" WidthRequest="250"/> 
+            </Grid>
+
+            <VerticalStackLayout Margin="0,20,0,0">
+                <Label Text="Email"/>   
+                
+
+        </VerticalStackLayout>
+
+            <VerticalStackLayout Margin="0,20,0,0">
+                <Label Text="Password"/>   
+                
+            </VerticalStackLayout>
+        <Button Margin="0,20,0,0" Text="Login" CornerRadius="20" BackgroundColor="#45298A" TextColor="White"/>    
+
+        <Label Margin="0,20,0,0" Text="New user? Register now!" FontSize="14" HorizontalOptions="Center"/>
+
+
+        <Grid Margin="0,20,0,0" ColumnSpacing="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+
+                </Grid.ColumnDefinitions>   
+                <BoxView Grid.Column="0" HeightRequest="1" Color="Black"/>
+                <Label Grid.Column="1" Text="Use another method." FontSize="12" HorizontalOptions="Center"/>
+                <BoxView Grid.Column="2" HeightRequest="1" Color="Black"/>
+            </Grid>
+
+            <HorizontalStackLayout Margin="0,15,0,0" Spacing="15" HorizontalOptions="Center">
+                <Image Source="googleicon.png" WidthRequest="35" HeightRequest="35"/>
+                <Image Source="mailicon.png" WidthRequest="35" HeightRequest="35"/>
+            </HorizontalStackLayout>
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
+
